@@ -40,7 +40,7 @@ function onStart()
 </div>
 ```
 
-I recommend (Owl Carousel)[http://owlgraphic.com/owlcarousel/index.html].
+I recommend [Owl Carousel](http://owlgraphic.com/owlcarousel/index.html).
 
 The advantage to building your own partials, instead of using a pre-made component, is that you can fully customize your use of the data.
 
