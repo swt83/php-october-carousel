@@ -1,0 +1,11 @@
+name: Carousels
+modelClass: Travis\Carousel\Models\Carousel
+form: $/travis/carousel/models/carousel/fields.yaml
+defaultRedirect: travis/carousel/carousels
+create:
+    redirect: 'travis/carousel/carousels/update/:id'
+    redirectClose: travis/carousel/carousels
+update:
+    redirect: travis/carousel/carousels
+    redirectClose: travis/carousel/carousels
+preview: {  }

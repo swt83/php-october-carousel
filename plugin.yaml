@@ -1,0 +1,24 @@
+plugin:
+    name: 'travis.carousel::lang.plugin.name'
+    description: 'travis.carousel::lang.plugin.description'
+    author: 'Scott Travis'
+    icon: oc-icon-picture-o
+    homepage: ''
+permissions:
+    travis.carousel.manage_carousel:
+        tab: 'travis.carousel::lang.plugin.name'
+        label: 'Manage Carousel'
+navigation:
+    carousel:
+        label: 'travis.carousel::lang.plugin.name'
+        url: travis/carousel/carousels
+        icon: icon-picture-o
+        permissions:
+            - travis.carousel.manage_carousel
+        sideMenu:
+            carousels:
+                label: Carousels
+                url: travis/carousel/carousels
+                icon: icon-picture-o
+                permissions:
+                    - travis.carousel.manage_carousel
