@@ -3,7 +3,7 @@ plugin:
     description: 'travis.carousel::lang.plugin.description'
     author: 'Scott Travis'
     icon: oc-icon-picture-o
-    homepage: ''
+    homepage: 'https://github.com/swt83/php-october-carousel'
 permissions:
     travis.carousel.manage_carousel:
         tab: 'travis.carousel::lang.plugin.name'
@@ -13,12 +13,13 @@ navigation:
         label: 'travis.carousel::lang.plugin.name'
         url: travis/carousel/carousels
         icon: icon-picture-o
+        iconSvg: 'plugins/travis/carousel/assets/img/icon.png'
         permissions:
             - travis.carousel.manage_carousel
         sideMenu:
             carousels:
                 label: Carousels
                 url: travis/carousel/carousels
-                icon: icon-picture-o
+                icon: icon-list
                 permissions:
                     - travis.carousel.manage_carousel
