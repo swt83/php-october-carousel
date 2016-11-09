@@ -21,11 +21,18 @@ use Travis\Carousel\Models\Carousel;
 
 function onStart()
 {
-    // load
-    $record = Carousel::where('name', '=', 'Home Page')->first();
+    // cache forever...
+    $carousel = Cache::rememberForever('carousel', function()
+    {
+        // load
+        $record = Carousel::where('name', '=', 'Home Page')->first();
+
+        // return
+        return $record->images;
+    });
 
     // bind
-    $this['carousel'] = $record->images;
+    $this['carousel'] = $carousel;
 }
 ?>
 ==
